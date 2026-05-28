@@ -1,0 +1,15 @@
+Promedio de goles por partido: 2.2
+
+TABLA DE POSICIONES
+Equipo Puntos Ganados
+--------------------------------
+Boca 3 1
+River 0 0
+Independiente 1 0
+Racing 1 0
+San Lorenzo 0 0
+Huracan 3 1
+Estudiantes 3 1
+Gimnasia 0 0
+Velez 3 1
+Lanus 0 0
