@@ -7,9 +7,9 @@ puntos = {}
 ganados = {}
 
 for i in range(1, len(lineas)):
-    linea = lineas[i].split(',')
-    equipo_local = linea[0]
-    equipo_visitante = linea[1]
+    linea = lineas[i].strip().split(',')
+    equipo_local = linea[0].strip()
+    equipo_visitante = linea[1].strip()
     goles_local = int(linea[2])
     goles_visitante = int(linea[3])
 
@@ -32,7 +32,12 @@ for i in range(1, len(lineas)):
         puntos[equipo_local] = puntos[equipo_local] + 1
         puntos[equipo_visitante] = puntos[equipo_visitante] + 1
 
-promedio = total_goles / (len(lineas) - 1)
+n_partidos = 0
+for l in lineas[1:]:
+    if l.strip():
+        n_partidos += 1
+
+promedio = total_goles / n_partidos
 
 salida = open('resultados/resultados.txt', 'w')
 salida.write('Promedio de goles por partido: ')
