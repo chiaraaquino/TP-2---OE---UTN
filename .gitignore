@@ -1,0 +1,11 @@
+data/
+*.csv
+*.xlsx
+*.parquet
+.ipynb_checkpoints/
+*.ipynb
+.env
+_pycache_/
+*.pyc
+.DS_Store
+Thumbs.db
